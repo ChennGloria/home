@@ -1,0 +1,220 @@
+/*this is a cascading style sheet to format the webpage */
+/*importing fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+/*base for top navigation bar*/
+.topnav {
+	background-color: #121254;
+	overflow: hidden;
+}
+
+/*styling tags within the navigation bar*/
+.topnav a {
+	float: left;
+	color: #f9f8f9;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+/*hover effect*/
+.topnav a:hover {
+	background-color: #09092a;
+	color: #f9f8f9;
+}
+
+/*active effect*/
+.topnav a.active {
+	background-color: #09092a;
+	color: white;
+}
+
+/******************************/
+
+/*background colour for webpage*/
+body, html {
+	background-color:#191970;
+}
+
+/*structuring title image*/
+.image{
+	background-image: url("pic1.jpg");
+	opacity: 1;
+	height: 100%;
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+
+.middle{
+	opacity: 0;
+	transition: .5s ease;
+	position: absolute;
+	top: 50%;
+	left: 100%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+}
+	
+.container{
+	position: relative;
+	width: 50%;
+}
+
+.container:hover .image{
+	opacity: 0.3;
+}
+
+.container:hover .middle{
+	opacity:1;
+}
+
+.text{
+	color: white;
+	font-size: 36px;
+}
+
+/******************************/
+/*general formatting*/
+*{
+	font-family: 'Poppins', sans-serif;
+}
+
+/*format for headings*/
+h1,h2,h3,h4{
+	font-family: 'Quicksand', sans-serif;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	margin-left: 550px;
+	margin-right: 550px;
+	background-color: #121254;
+}
+
+/*space to separate sections*/
+.small-space{
+	margin-top:100px;
+}
+
+/*medium space to separate sections*/
+.space{
+	margin-top: 250px;
+}
+
+/*bigger space to separate sections*/
+.big-space{
+	margin-top: 350px;
+}
+
+/*line to separate sections*/
+hr{
+	border-style: solid;
+	border-color: #121254;
+	border-width: 3px;
+}
+
+/*format for paragraphs*/
+p{
+	background-color:#f9f8f9;
+	padding-top: 50px;
+	padding-right: 30px;
+	padding-bottom: 50px;
+	padding-left: 30px;
+	font-size: 18px;
+	text-align: justify;
+	margin-left: 400px;
+	margin-right: 400px;
+}
+
+/*layout for gallery*/
+div.gallery{
+	margin: 5px;
+	float: left;
+	width: 250px;
+}
+
+/*format for images*/
+div.gallery img{
+	margin-left: 360px;
+	width: 100%;
+	height: auto;
+	border-style:solid;
+	border-width: medium;
+	border-color: #121254;
+	border-radius: 30px;
+}
+
+/*format for image captions*/
+figcaption{
+	color: white;
+	background-color: #121254;
+	text-align: center;
+	margin-left: 400px;
+}
+
+/*formatting table*/
+table, th, td{
+	margin-left: 400px;
+	margin-right: 400px;
+	padding: 10px;
+	border: 1px solid;
+	background-color: #f9f8f9;	
+} 
+
+.smallfont{
+	font-size: 15px;
+}
+
+.right{
+	margin-left: 600px;
+	margin-right: 200px;
+}
+
+.left{
+	float: left;
+	margin-left: -10px;
+	padding-right: 10px;
+}
+
+/*formatting border*/
+.border{
+	border: 5px solid;
+	border-color: #121254;
+	border-radius: 30px;
+}
+
+/*formatting iframes*/
+.frame{
+	float: left;
+	position: relative;
+	display: inline-block;
+	height: 200px;
+	width: 290px;
+}
+
+#vid1{
+	top: -150px;
+	margin: 180px;
+}
+
+#vid2{
+	margin: -480px;
+	top: 250px;
+}
+
+#vid3{
+	margin: 180px;
+	top: -420px;
+}
+
+#club{
+	margin: 200px;
+	top: -200px;
+}
+
+#page{
+	margin: -500px;
+	top: 345px;
+}
